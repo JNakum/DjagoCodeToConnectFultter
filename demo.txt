@@ -1,0 +1,21 @@
+virtualenv venv
+
+source venv/bin/activate
+
+pip freeze
+
+pip install django
+
+django-admin startproject myproject .
+
+python manage.py startapp myapp
+
+pip install djangorestframework
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python3 manage.py createsuperuser
+
+python manage.py runserver
